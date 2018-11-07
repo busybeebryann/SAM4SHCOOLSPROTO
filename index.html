@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+  body{
+    background-color: whitesmoke;
+      height: 1500px;
+  }
+    .navbar-header {
+        padding:10px;
+    }
+    .navbar-header a {
+  background: rgba(255,255,255,0.1);
+  -o-transition: -o-transform ease-out 0.1s, background 0.2s;
+  -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+  -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+  transition: transform ease-out 0.1s, background 0.2s;
+  display: inline-block;
+  position:relative;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+    .navbar-header a:hover {
+  background: rgba(255,255,255,0.05);
+  -o-transform: scale(0.93);
+  -webkit-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+}
+    .navbar-header a:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-box-sizing: content-box; 
+  -moz-box-sizing: content-box; 
+  box-sizing: content-box;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+  -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -o-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+    .navbar-header a:hover:after {
+  -o-animation: sonarEffect 1.3s ease-out 75ms;
+  -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+  animation: sonarEffect 1.3s ease-out 75ms;
+}
+@-o-keyframes sonarEffect {
+  0% {
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+  }
+  40% {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes sonarEffect {
+  0% {
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+  }
+  40% {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+@keyframes sonarEffect {
+  0% {
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+  }
+  40% {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 0 10px rgba(255,255,255,0.3);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+      .nav{
+           display: inline-block;
+ 
+      }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-left" href="#"><img class="s4-logo" src="C:\Users\Joshua.Jeremillo\Desktop\sample4schools\logo.png" style="width:100px; height:100px; margin: auto;"></a>
+    </div>
+    
+    <ul class="nav navbar-nav navbar-middle">
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">SCHOOLS</a></li>
+      <li><a href="#">WHO ARE POGS</a></li>
+      <li><a href="#">OUR SCHOOLS</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" style="margin-top:200px;">
+  <h3>Right Aligned Navbar</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>    
+    </div>
+    <div class="col-md-4"> 
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

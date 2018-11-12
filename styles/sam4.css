@@ -1,0 +1,34 @@
+#table-example-1 { 
+    border: solid thin; 
+    border-collapse: collapse; 
+  }
+  #table-example-1 caption { 
+    padding-bottom: 0.5em; 
+  }
+  #table-example-1 th, 
+  #table-example-1 td { 
+    border: solid thin;
+    padding: 0.5rem 2rem;
+  }
+  #table-example-1 td {
+    white-space: nowrap;
+  }
+  #table-example-1 th { 
+    font-weight: normal; 
+  }
+  #table-example-1 td { 
+    border-style: none solid; 
+    vertical-align: top; 
+  }
+  #table-example-1 th { 
+    padding: 0.2em; 
+    vertical-align: middle; 
+    text-align: center; 
+  }
+  
+  #table-example-1 tbody td:first-child::after { 
+    content: leader(". "); 
+  }
+  
+
+ 

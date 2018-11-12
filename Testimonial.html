@@ -162,6 +162,15 @@
 .footer p {
   font-size: 12px;
 }
+.testimonial {
+    border: 1px solid whitesmoke; background: white;
+}
+#description {
+   
+}
+#more {
+    display:none;
+}
 </style>
 </head>
 <body>
@@ -177,79 +186,72 @@
       <li><a href="Index.html">HOME</a></li>
       <li><a href="Schools.html">SCHOOLS</a></li>
       <li><a href="Pogs.html">WHO ARE POGS</a></li>
-      <li><a href="Testimonial.html">OUR SCHOOLS</a></li>
+      <li class="active"><a href="Testimonial.html">OUR SCHOOLS</a></li>
       <li><a href="Costing.html">COSTING</a></li>
-      <li class="active"><a href="Contact.html">CONTACT US</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
     </ul>
   </div>
 </nav>
   
 <div class="container" style="margin-top:140px;">
-  <h3 style="font-weight: bold;">Contact Us</h3>
-  <div class="row" style="margin-top: 30px;">
-    <div class="col-md-6 contact-info">
-      <p id="highlight">SAM4Schools™</p>
-      <p>Safety Assurance Management Pty Ltd</p>
-      <p><span>ABN:</span> 99 142 387 728</p><br/>
-      <p><span class="fa fa-envelope fa-fw"></span> Email: <a href="mailto:info@sam4schools.com.au">info@sam4schools.com.au</a></p>
-      <p><span class="fa fa-phone fa-fw"></span> Office: 1300 100 458</p>
-      <p><span class="fa fa-phone fa-fw"></span> Direct: 0439 318 233</p>  
-      <p><span class="fa fa-map-marker fa-fw"></span> PO Box 2109, Camberwell West</p>
-      <p><span class="fa fa-blank fa-fw"></span> Camberwell VIC 3124</p>  
-
-    </div>
-    <div class="col-md-5">
-      <form action="/action_page.php">
-        <div class="form-group">
-          <label for="firstname">FIRST NAME</label>
-          <input type="text" class="form-control" id="text">
+    <h3 style="font-weight: bold; text-align: center;">CLIENT SCHOOLS AND TESTIMONIALS</h3>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-5 testimonial">
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="https://www.mooroolbarkcollege.vic.edu.au/" target="_new"><img src="https://www.sam4schools.com.au/images/mooroolbark.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-top: 16px; width:50%;"></a>
+                    <p style="font-weight: bold; text-align: center;">Mooroolbark College</p>
+                </div>
+                <div id="description">
+                    <p>Since taking on the role of Property Manager at Mentone Girls’ Grammar in 2013 I have found the sam4schools system the perfect tool for managing the compliance documentation all our external providers and contractors.<span id="dots">...</span><br/><span id="more"><br/>Chris Bateson<br/>Property Manager</span></p>    
+                </div>
+                <div style="margin-left: 200px;">
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                </div>         
+            </div>
         </div>
-        <div class="form-group">
-          <label for="lastname">LAST NAME</label>
-          <input type="text" class="form-control" id="text">
+        <div class="col-md-5 testimonial">
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="https://www.mentonegirls.vic.edu.au/" target="_new"><img src="https://www.sam4schools.com.au/images/mentone-girls-grammar-school.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-top: 16px; width:50%;"></a>
+                    <p style="font-weight: bold; text-align: center;">Mentone Girl's Grammar School</p>
+                </div>
+                <div id="description">
+                    <p>Since taking on the role of Property Manager at Mentone Girls’ Grammar in 2013 I have found the sam4schools system the perfect tool for managing the compliance documentation all our external providers and contractors.<span id="dots">...</span><br/><span id="more"><br/>Chris Bateson<br/>Property Manager</span></p>    
+                </div>
+                <div style="margin-left: 200px;">
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                </div>         
+            </div>
         </div>
-        <div class="form-group">
-          <label for="email">EMAIL</label>
-          <input type="email" class="form-control" id="email"
-                  placeholder="email@example.com" />
+        <div class="col-md-5 testimonial">
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="http://camberwellps.vic.edu.au/" target="_new"><img src="https://www.sam4schools.com.au/images/camberwell-primary-school.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-top: 16px; width:50%;"></a>
+                    <p style="font-weight: bold; text-align: center;">Camberwell Primary School</p>
+                </div>
+                <div id="description">
+                    <p>Since taking on the role of Property Manager at Mentone Girls’ Grammar in 2013 I have found the sam4schools system the perfect tool for managing the compliance documentation all our external providers and contractors.<span id="dots">...</span><br/><span id="more"><br/>Chris Bateson<br/>Property Manager</span></p>    
+                </div>
+                <div style="margin-left: 200px;">
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                </div>         
+            </div>
         </div>
-        <div class="form-group">
-          <label for="phone">PHONE</label>
-          <input type="tel" class="form-control" id="tel"
-                 placeholder="13-0010-0458 "
-                 pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
-                 required />
+        <div class="col-md-5 testimonial">
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="http://www.mlmc.vic.edu.au/" target="_new"><img src="https://www.sam4schools.com.au/images/mount-lilydale-mercy.jpg" style="display: block;margin-left: auto;margin-right: auto; margin-top: 16px; width:50%;"></a>
+                    <p style="font-weight: bold; text-align: center;">Mount Lilydale Mercy College</p>
+                </div>
+                <div id="description">
+                    <p>Since taking on the role of Property Manager at Mentone Girls’ Grammar in 2013 I have found the sam4schools system the perfect tool for managing the compliance documentation all our external providers and contractors.<span id="dots">...</span><br/><span id="more"><br/>Chris Bateson<br/>Property Manager</span></p>    
+                </div>
+                <div style="margin-left: 200px;">
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                </div>         
+            </div>
         </div>
-        <div class="form-group">
-          <label for="company">SCHOOL/BUSINESS</label>
-          <input type="text" class="form-control" id="text">
-        </div>
-        <div class="form-group">
-          <label for="state">STATE</label><br />
-          <select id="pet-select">
-            <option value="">- Choose your State -</option>
-            <option value="ACT">A.C.T</option>
-            <option value="newSouthWales">New South Wales</option>
-            <option value="northernTerriotry">Northern Territory</option>
-            <option value="queensland">Queensland</option>
-            <option value="southAu">South Australia</option>
-            <option value="tasmania">Tasmania</option>
-            <option value="westAu">Western Australia</option>
-            <option value="victoria">Victoria</option>
-        </select>
-        </div>
-        <div class="form-group">
-          <label for="company">ENQUIRY</label>
-          <textarea type="text" class="form-control" id="text"
-                    rows="10"></textarea>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox"> Remember me</label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-        <button type="clear" class="btn btn-default">&nbspClear&nbsp</button>
-      </form>
-    </div> 
   </div>
 </div>
 
@@ -257,5 +259,22 @@
   <p>Copyright © Safety Assurance Management Pty Ltd</p>
   <p style="margin-top: 1px;">ABN: 99 142 387 728</p>
 </div>
+<script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
 </body>
 </html>

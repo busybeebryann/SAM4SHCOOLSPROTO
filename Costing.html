@@ -14,7 +14,7 @@
   <style>
   
   body{
-    background-color: whitesmoke;
+    background-color: white;
       height: 1500px;
   }
     .navbar-header {
@@ -177,7 +177,18 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;}
-    
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: rgb(245,245,245);}
+
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 13px;    
+    }
 </style>
 </head>
 <body>
@@ -194,7 +205,7 @@
       <li><a href="#">SCHOOLS</a></li>
       <li><a href="#">WHO ARE POGS</a></li>
       <li><a href="Testimonial.html">OUR SCHOOLS</a></li>
-      <li class="active"><a href="Costing.html">COSTING</a></li>
+      <li class="active"><a href="Costing.html">PRICING</a></li>
       <li><a href="Contact.html">CONTACT US</a></li>
     </ul>
   </div>
@@ -217,12 +228,12 @@
     <div class="col-md-8">
       <h3>Low cost and predictable budgeting</h4>
       <ul style="margin-top: 20px;">
-          <li class=""> No other compliance program can offer such a complete service with constant monitoring of required certification and real time information.</li>
+          <li>No other compliance program can offer such a complete service with constant monitoring of required certification and real time information.</li>
           <li>No other compliance program has been created and developed specifically for Schools.</li>
           <li>Make scheduled annual payments for a complete compliance program at a cost that is substantially cheaper than any other program on the market.</li>
           <li>The annual program payment is renewable on the same day every year allowing forward budgeting.</li>
       </ul><br/>
-      <h3>Low cost and predictable budgeting</h4>
+      <h3>Reduced Expenses</h4>
       <p>There are no administrative fees or add-on costs. In addition to these benefits, you also get free upgrades and improvements during the 
           contract period, making SAM4Schools™ the most affordable way to always be compliant with the most up-to-date information.</p>
     </div>
@@ -272,7 +283,27 @@
                 <td> $ 3,750 per annum<br/>(less than $75/ per week)</td>
                 <td> $ 3,100 per annum<br/>(less than $35/ per week)</td>
              </tr></tbody></table>
-
+             <div class="row"> 
+                 <div class="col-md-4" style="border: 1px solid green;height: 150px; width: 380px; background: rgb(245,245,245);">
+                     
+                         <h5 style="position: relative; bottom:0; text-align: center; background: steelblue;">Catholic Schools</h5>
+                     
+                 </div>
+                 <div class="col-md-4"> 
+                <div style="text-align: center; background: steelblue; width:100%;">
+                    <h5 style="color:white;font-weight: bold;padding: 10px 0 10px 0;">Catholic Schools</h5></div>
+                     <div class="flex-container">
+                            <div>Type</div>
+                            <div>Single Campus</div>
+                            <div>Multicampus</div>
+                            
+                    </div>
+            </div> 
+            <div class="col-md-4" style="border: 1px solid red"> Government Schools 
+            </div>
+             <div class="col-md-4" style="border: 1px solid green"> 
+                Independent Schools 
+            </div>
 </div>
 </div>
 </body>

@@ -150,7 +150,7 @@
     .hero-text {
         text-align: center;
         position: absolute;
-        top: 61%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;} 
@@ -167,9 +167,7 @@
     .hero-text button:hover {
         background-color: #555;
         color: white;}
-    .container {
-        font-size: 15px;
-    }
+
     .img-cost {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/sam-benefit.jpg");
         width: 50%;
@@ -189,35 +187,68 @@
         line-height: 40px;
         font-size: 13px;    
     }
+    .footer {
+   position: relative;
+   margin-top: 25px;
+   left: 0;
+   bottom: 0;
+   height: 8vh;
+   width: 100%;
+   background-color: rgb(38,38,39);
+   color: white;
+   text-align: center;
+}
+.footer p {
+  font-size: 12px;
+}
 </style>
 </head>
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
-      <a class="navbar-left" href="#"><img class="s4-logo" src="images/logo.png" style="width:100px; height:100px; margin: auto;"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
     </div>
-    
-    <ul class="nav navbar-nav navbar-middle">
+    <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-      <li><a href="Index.html">HOME</a></li>
-      <li><a href="#">SCHOOLS</a></li>
-      <li><a href="#">WHO ARE POGS</a></li>
-      <li><a href="Testimonial.html">OUR SCHOOLS</a></li>
-      <li class="active"><a href="Costing.html">PRICING</a></li>
-      <li><a href="Contact.html">CONTACT US</a></li>
-    </ul>
+          <img alt="Brand" src="images/logo_md.png"style="height: 50px; width:50px;float:left;">
+          <a class="navbar-brand" href="#">SAM4Schools™
+            </a>
+        <li><a href="Index.html">HOME</a></li>
+        <li class="dropdown active">
+            <a href="Costing.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SCHOOLS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- <li class="dropdown-header">Our Process</li> -->
+              <li><a href="Costing.html">OUR PROCESS</a></li>
+              <li><a href="Costing.html#Work">HOW DOES IT WORK</a></li>
+              <li><a href="Costing.html#Cost">COSTING</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#Register">REGISTER NOW</a></li>
+            </ul>
+          </li>
+        <li><a href="#pogs">WHO ARE POGS</a></li>
+        <li><a href="Testimonial.html">OUR SCHOOLS</a></li>          
+        <li><a href="Contact.html">CONTACT US</a></li>      
+      </ul>
+    </div><!--/.nav-collapse -->
   </div>
 </nav>
+
 <div class="img-header">
         <div class="hero-text">
           <!-- <h1 style="color: #ddd;font-size:50px;">SAM4Schools™</h1> -->
           <h3>Our Annual Payment Program is the low cost, economical way to use the SAM4Schools™ Online Compliance Management System.
             <br/>NOW is a great time to set up your School with SAM4Schools™
             <br/>School Clients are billed a one-off annual payment when they join
-                Full access and assistance is provided for 12 months</h3>
-          <button>SIGN UP NOW</button>
+                Full access and assistance is provided for 12 months</h3><br/>
+          <button>SIGN UP NOW</button><br/><br/>
+          <a href="" style="font-weight:bolder; font-size: 15px; text-decoration: none;">Read More</a>
         </div>
       </div>
 <div class="container" style="width: 80%;background: #ddd; padding: 0 30px 30px 30px;">
@@ -242,69 +273,104 @@
     </div>
 </div>
 </div>
-<div class="container" style="width: 80%; padding: 0 30px 30px 30px; border: 1px solid #ddd">
+<div class="container" style="font-size: 16px;height: 55%;width: 80%; padding: 0 30px 30px 30px; border: 1px solid #ddd;">
         <h2 align="center" style="margin-top: 25px;">SAM4Schools™ COST ANNUAL PAYMENT PROGRAM</h2><hr style="border-color: slategray;">
         <h4 style="text-align: center; font-size: 17px;">Initial Annual Payment is payable by a school upon registering SAM4Schools™ and thereafter upon the annual date of registration.</h4>
-        <table id="table-example-1"><caption></caption>
-            <thead><tr><th rowspan="2">Type</th>
-              <th colspan="2">Primary School Only</th>
-              <th colspan="2">Secondary School Only</th>
-              <th colspan="2">P-12</th>
-              <th rowspan="2">Special School</th>
-             </tr><tr>
-              <th>Single Campus</th>
-              <th>Multicampus</th>
-              <th>Single Campus</th>
-              <th>Multicampus</th>
-              <th>Single Campus</th>
-              <th>Multicampus</th> 
-             </tr></thead><tbody><tr><td>Catholic Schools</td>
-               <td> $ 1,790 per annum<br/>(less than $35/ per week)</td>
-               <td> $ 2,050 per annum<br/>(less than $40/ per week)</td>
-               <td> $ 2,600 per annum<br/>(less than $50/ per week)</td>
-               <td> $ 3,100 per annum<br/>(less than $60/ per week)</td>
-               <td> $ 3,100 per annum<br/>(less than $60/ per week)</td>
-               <td> $ 3,750 per annum<br/>(less than $75/ per week)</td>
-               <td> $ 1,790 per annum<br/>(less than $35/ per week)</td>
-             </tr><tr><td>Government Schools</td>
-               <td> $ 1,790 per annum<br/>(less than $35/ per week)</td>
-               <td> $ 2,050 per annum<br/>(less than $40/ per week)</td>
-               <td> $ 2,600 per annum<br/>(less than $50/ per week)</td>
-               <td> $ 3,100 per annum<br/>(less than $60/ per week)</td>
-               <td> $ 3,100 per annum<br/>(less than $60/ per week)</td>
-               <td> $ 3,750 per annum<br/>(less than $75/ per week)</td>
-               <td> $ 3,100 per annum<br/>(less than $35/ per week)</td>
-             </tr><tr><td>Independent Schools</td>
-                <td> $ 1,790 per annum<br/>(less than $35/ per week)</td>
-                <td> $ 2,050 per annum<br/>(less than $40/ per week)</td>
-                <td> $ 2,600 per annum<br/>(less than $50/ per week)</td>
-                <td> $ 3,100 per annum<br/>(less than $60/ per week)</td>
-                <td> $ 3,100 per annum<br/>(less than $60/ per week)</td>
-                <td> $ 3,750 per annum<br/>(less than $75/ per week)</td>
-                <td> $ 3,100 per annum<br/>(less than $35/ per week)</td>
-             </tr></tbody></table>
-             <div class="row"> 
-                 <div class="col-md-4" style="border: 1px solid green;height: 150px; width: 380px; background: rgb(245,245,245);">
-                     
-                         <h5 style="position: relative; bottom:0; text-align: center; background: steelblue;">Catholic Schools</h5>
-                     
-                 </div>
-                 <div class="col-md-4"> 
-                <div style="text-align: center; background: steelblue; width:100%;">
-                    <h5 style="color:white;font-weight: bold;padding: 10px 0 10px 0;">Catholic Schools</h5></div>
-                     <div class="flex-container">
-                            <div>Type</div>
-                            <div>Single Campus</div>
-                            <div>Multicampus</div>
-                            
+             
+            <div id="container-l">
+              <div class="box">
+                <div class="box-head">
+                    <p id="head-text">Catholic Schools</p>
+                </div>
+                  <div class="box-head1">   
+                      <table id="table-example-1"><caption></caption>
+                      <thead><tr>
+                        <th rowspan="1">Type</th>
+                        <th colspan="1">Single Campus</th>
+                        <th colspan="1">Multicampus</th>
+                      </tr><tr>
+                          <th>Primary School Only</th>
+                          <th><span style="font-weight: bold;">$ 1,790</span> per annum<br/>(less than $35/ per week)</th>
+                          <th>$ 2,050 per annum<br/>(less than $40/ per week)</th>
+                      </tr><tr>
+                          <th>Secondary School Only</th>
+                          <th>$ 2,600 per annum<br/>(less than $50/ per week)</th>
+                          <th>$ 3,100 per annum<br/>(less than $60/ per week)</th>
+                      </tr><tr>
+                          <th>P-12</th>
+                          <th>$ 3,100 per annum<br/>(less than $60/ per week)</th>
+                          <th>$ 3,750 per annum<br/>(less than $75/ per week)</th>
+                      </tr><tr>
+                          <th>Special School</th>
+                          <th colspan="2">$ 1,790 per annum<br/>(less than $35/ per week)</th>
+                      </tr></thead></table>
+                      <button id="btn-register">Register</button>
+                  </div>        
+              </div>
+              <div class="box">
+                  <div class="box-head">
+                      <p id="head-text">Government Schools</p>
+                  </div>
+                    <div class="box-head1">   
+                        <table id="table-example-1"><caption></caption>
+                        <thead><tr>
+                          <th rowspan="1">Type</th>
+                          <th colspan="1">Single Campus</th>
+                          <th colspan="1">Multicampus</th>
+                        </tr><tr>
+                            <th>Primary School Only</th>
+                            <th>$ 1,790 per annum<br/>(less than $35/ per week)</th>
+                            <th>$ 2,050 per annum<br/>(less than $40/ per week)</th>
+                        </tr><tr>
+                            <th>Secondary School Only</th>
+                            <th>$ 2,600 per annum<br/>(less than $50/ per week)</th>
+                            <th>$ 3,100 per annum<br/>(less than $60/ per week)</th>
+                        </tr><tr>
+                            <th>P-12</th>
+                            <th>$ 3,100 per annum<br/>(less than $60/ per week)</th>
+                            <th>$ 3,750 per annum<br/>(less than $75/ per week)</th>
+                        </tr><tr>
+                            <th>Special School</th>
+                            <th colspan="2">$ 1,790 per annum<br/>(less than $35/ per week)</th>
+                        </tr></thead></table>
+                        <button id="btn-register">Register</button>
+                    </div>        
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <p id="head-text">Independent Schools</p>
                     </div>
-            </div> 
-            <div class="col-md-4" style="border: 1px solid red"> Government Schools 
-            </div>
-             <div class="col-md-4" style="border: 1px solid green"> 
-                Independent Schools 
+                      <div class="box-head1">   
+                          <table id="table-example-1"><caption></caption>
+                          <thead><tr>
+                            <th rowspan="1">Type</th>
+                            <th colspan="1">Single Campus</th>
+                            <th colspan="1">Multicampus</th>
+                          </tr><tr>
+                              <th>Primary School Only</th>
+                              <th>$ 1,790 per annum<br/>(less than $35/ per week)</th>
+                              <th>$ 2,050 per annum<br/>(less than $40/ per week)</th>
+                          </tr><tr>
+                              <th>Secondary School Only</th>
+                              <th>$ 2,600 per annum<br/>(less than $50/ per week)</th>
+                              <th>$ 3,100 per annum<br/>(less than $60/ per week)</th>
+                          </tr><tr>
+                              <th>P-12</th>
+                              <th>$ 3,100 per annum<br/>(less than $60/ per week)</th>
+                              <th>$ 3,750 per annum<br/>(less than $75/ per week)</th>
+                          </tr><tr>
+                              <th>Special School</th>
+                              <th colspan="2">$ 1,790 per annum<br/>(less than $35/ per week)</th>
+                          </tr></thead></table>
+                          <button id="btn-register">Register</button>
+                      </div>        
+                  </div>
             </div>
 </div>
+</div>
+<div class="footer"><br/>
+  <p>Copyright © Safety Assurance Management Pty Ltd</p>
+  <p style="margin-top: 1px;">ABN: 99 142 387 728</p>
 </div>
 </body>
 </html>

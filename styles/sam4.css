@@ -76,6 +76,9 @@
   padding: 0 10px 0 10px;
 }
 
+.amount{
+  font-weight:bold;
+}
 #btn-register {
   border: none;
   outline: 0;

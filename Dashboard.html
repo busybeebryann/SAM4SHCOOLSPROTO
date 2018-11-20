@@ -1,197 +1,231 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Dashboard</title>
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="styles/ui-board.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3 style="color:White;">SAM4Schools™</h3>
-                <span style="Margin-left: 22px;color:snow;">Compliance Register</span>
-            </div>
-            <ul class="list-unstyled components" style="padding-top:1px;">        
-                <li class="active">
-                    <a href="#home">My Home</a>
-                </li>
-                <li>
-                    <a href="#">Awaiting Verification</a>
-                </li>
-                <li>
-                    <a href="#Invite new POGS">Invite new POGS</a>
-                </li>
-                <li>
-                    <a href="#">Account details</a>
-                </li>
-                <li>
-                    <a href="#">Add New POGS Request</a>
-                </li>
-                <li>
-                    <a href="#">Useful Information</a>
-                </li>
-                <li>
-                    <a href="#">Search for a new POGS</a>
-                </li>
-                <li>
-                    <a href="#">Administrator Instructions</a>
-                </li>
-                <li>
-                    <a href="#">Contact Support</a>
-                </li>
-                <li>
-                    <a href="#">Information provided to POGS</a>
-                </li>
-                <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Files</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li>
-                                <a href="#">Handbook</a>
-                            </li>
-                            <li>
-                                <a href="#">SWMS</a>
-                            </li>
-                            <li>
-                                <a href="#">WWC</a>
-                            </li>
-                            <li>
-                                <a href="#">Liability</a>
-                            </li>
-                        </ul>
-                    </li>
-            </ul>
-            <p style="font-size: 14px; color: black;text-align:center;">Copyright © Safety Assurance Management Pty Ltd.</p>
-            <p style="font-size: 13px; color:black;text-align:center;">ABN: 99 142 387 728</p>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark" style="background: #2b5797;">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-align-justify"></i>
-                    </button>
+        <link rel="icon" href="favicon.ico">
+        <title>Dashboard - SAM4Schools™ Compliance Register</title>
                     
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                <a class="nav-link" href="#" style="margin-right:8px;font-weight: bold;font-size: 20px;margin-left: 10px;color:#1d1d1d;">HOME</a>
-                            </li>
-                    </ul>
+            <!-- Icons -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item dropdown pull-left" style="margin-right: 15px;">
-                            <a class="nav-link Admin-menu" href="#" id="navbardrop" data-toggle="dropdown">Admin Menu</a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a class="dropdown-item" href="#" >Impersonate</a></li>
-                                    <li><a class="dropdown-item" href="#">Activity Notes</a></li>
-                                    <li><a class="dropdown-item" href="#">Pending Emails/Actions</a></li>
-                                    <li><a class="dropdown-item" href="#">Default POGS Compliances</a></li>
-                                    <li><a class="dropdown-item" href="#">Email Addresses</a></li>
-                                    <li><a class="dropdown-item" href="#">POGS Reminder Emails</a></li>
-                                    <li><a class="dropdown-item" href="#">School Welcome Emails</a></li>
-                                    <li><a class="dropdown-item" href="#">Create Reports</a></li>
-                                    <li><a class="dropdown-item" href="#">Groups</a></li>
-                                    <li><a class="dropdown-item" href="#">Hyperlinks</a></li>
-                                    <li><a class="dropdown-item" href="#">Permissions</a></li>
-                                    <li><a class="dropdown-item" href="#">School Manuals & Policies</a></li>
-                                    <li><a class="dropdown-item" href="#">School Types</a></li>
-                                    <li><a class="dropdown-item" href="#">POGS Classification</a></li>
-                                    <li><a class="dropdown-item" href="#">User Contacts</a></li>
-                                    <li><a class="dropdown-item" href="#">Client Schools & Testimonials</a></li>
-                                    <li><a class="dropdown-item" href="#">Existing POGS CCM</a></li>
-                                    <li><a class="dropdown-item" href="#">Useful Information - POGS</a></li>
-                                    <li><a class="dropdown-item" href="#">Useful Information - Schools</a></li>
-                                    <li><a class="dropdown-item" href="#">Information provided to POGS</a></li>
-                                    <li><a class="dropdown-item" href="#">Administrator Awaiting Verification</a></li>
-                                    <li><a class="dropdown-item" href="#">Administrator Instructions</a></li>
-                                    <li><a class="dropdown-item" href="#">Extra OHS Documents</a></li>
+            <!-- Bootstrap 4 -->
+            <link href="styles/bootstrap4-1-3.css" rel="stylesheet">
+
+            <!-- PACE for load progress -->
+            <link href="styles/pace.min.css" rel="stylesheet">
+
+    </head>
+    <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+        <!-- Header -->
+        <header class="app-header navbar">
+
+            <!-- left-toggle@smallscreen -->
+            <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show"">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <a class="navbar-brand" href="#" style="padding-left: 18px;">
+                <img class="navbar-brand-full" src="images/logo_vl.png" width="160" height="18" alt="SAM4Schools™ Logo">
+                <img class="navbar-brand-minimized" src="images/logo_md.png" width="30" height="30" alt="SAM4Schools™ Logo" style="width: 120px !important;">
+            </a>
+            <!-- left-toggle@bigscreen -->
+            <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show"  style="margin-left:15px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav navbar-nav d-md-down-none">
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav ml-auto">
+            
+            <!-- User -->        
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="img-avatar" src="images/user/man.png" alt="info@sam4school.com.au">
+            <!-- Icon source
+                <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> 
+            -->
+                    </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-header text-center">
+                                <strong>Account</strong>
+                            </div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-bell-o"></i> Updates
+                                <span class="badge badge-info">42</span>
+                            </a>
+
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-envelope-o"></i> Messages
+                                <span class="badge badge-success">42</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-tasks"></i> Tasks
+                                <span class="badge badge-danger">42</span>
+                            </a>
+
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-comments"></i> Comments
+                                <span class="badge badge-warning">42</span>
+                            </a>
+
+                            <div class="dropdown-header text-center">
+                                <strong>Settings</strong>
+                            </div>
+                            
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-user"></i> Profile</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-wrench"></i> Settings</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-usd"></i> Payments
+                                <span class="badge badge-dark">42</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-file"></i> Projects
+                                <span class="badge badge-primary">42</span>
+                            </a>
+
+                            <div class="divider"></div>
+
+                            <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- right-toggle@bigscreen -->
+            <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- left-toggle@smallscreen -->
+            <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </header>
+        <!-- Content -->
+            <div class="app-body">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <nav class="sidebar-nav">
+                        <ul class="nav">
+                            <li class="nav-title">Compliance Register</li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="main.html">
+                            <i class="fa fa-home"></i><span style="margin-left: 12px;">Home</span>
+                            </a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="AwaitingVerification.html">
+                            <i class="fa fa-hourglass-half"></i><span style="margin-left: 13px;">Awaiting Verification</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="Invite.html">
+                            <i class="fa fa-send"></i><span style="margin-left: 11px;">Invite new POGS</span></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                            <a class="nav-link" href="Registration.html">
+                            <i class="fa fa-id-badge"></i><span style="margin-left: 15px;">Account details</span></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                            <a class="nav-link" href="AddNewContractor.html">
+                            <i class="fa fa-user-plus"></i><span style="margin-left: 9px;">Add New POGS</span> <span style="margin-left: 25px;">Request</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="UsefulInformation.html">
+                            <i class="fa fa-info-circle"></i><span style="margin-left: 13px;">Useful Information</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="CompanySearch.html">
+                            <i class="fa fa-search"></i><span style="margin-left: 12px;">Search for a new</span> <span style="margin-left: 25px;">POGS</span></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                            <a class="nav-link" href="AdminInstruction.html">
+                            <i class="fa fa-user"></i><span style="margin-left: 15px;">Administrator</span> <span style="margin-left: 25px;">Instructions</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">
+                            <i class="fa fa-phone"></i><span style="margin-left: 14px;">Contact Support</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="InformationToPOGS.html">
+                            <i class="fa fa-question-circle"></i><span style="margin-left: 13px;">Information provided</span> <span style="margin-left: 25px;">to POGS</span></a>
+                            </li>
+
+                            <li class="nav-divider"></li>
+                            <li class="nav-title">Extras</li>
+
+                            <li class="nav-item nav-dropdown">
+                            <a class="nav-link nav-dropdown-toggle" href="#">
+                            <!-- <i class="nav-icon icon-puzzle"></i>  -->
+                            <i class="fa fa-file"></i><span style="margin-left: 13px;">Files</span></a>
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="document/Handbook.pdf">
+                                    <span style="margin-left: 10px;">
+                                    <i class="fa fa-paperclip"></i> Handbook</a></span>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="document/SWMS.pdf">
+                                    <span style="margin-left: 10px;">
+                                    <i class="fa fa-paperclip"></i> SWMS</a></span>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="document/WWC.pdf">
+                                    <span style="margin-left: 10px;">
+                                    <i class="fa fa-paperclip"></i> WWC</a></span>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="document/Liabilities.pdf">
+                                    <span style="margin-left: 10px;">
+                                    <i class="fa fa-paperclip"></i> Liability</a></span>
+                                    </li>
                                 </ul>
                             </li>
-                            <button type="button" class="btn btn-dark" style="background:#2b5797;">
-                                    <span>Logout</span>
-                            </button>                           
+                            <li class="nav-divider"></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
-
-            </nav>
-
-            <div></div>
-            <label>SAM4Schools ADMIN ONLY,</label>
-            <div>
-            Full Name: Greg Dawson<br/>
-            Position Title: Manager<br/>
-            Phone Number: 13 0010 0458<br/>
-            Email Address: info@sam4schools.com.au<br/>
-            Website: http://www.sam4schools.com.au<br/>
-            Postal Address: PO BOX 2109 Camberwell West Victoria 3145<br/>
-            School Number: 1111111111111<br/>
             </div>
-            <!-- <div class="line"></div>
 
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
 
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-        </div>
-    </div>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
-</body>
-
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div>
+            <a href="#">SAM4Schools™</a>
+            <span>Copyright © Safety Assurance Management Pty. Ltd.</span>
+            </div>
+            <div class="ml-auto">
+            <span>ABN:</span>
+            <a href="https://abr.business.gov.au/ABN/View?id=99142387728" style="color: black;">99 142 387 728</a>
+            </div>
+        </footer>
+    </body>   
+    <script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/perfect-scrollbar.min.js"></script>
+<script src="js/jscore.min.js"></script>
+<script>
+    $('#ui-view').ajaxLoad();
+    $(document).ajaxComplete(function() {
+      Pace.restart()
+    });
+  </script>     
 </html>

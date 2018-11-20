@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Dashboard - SAM4Schools Compliance Register</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="styles/ui-board.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="ui-board.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: white;">
+      <div class="container" style="width: 100%;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+          <img alt="SAM4Schools™" class="img-responsive" src="images/logo_vl.png" style="height: 25px;"/></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Dashboard</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin menu <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" >Impersonate</a></li>
+                    <li><a class="dropdown-item" href="#">Activity Notes</a></li>
+                    <li><a class="dropdown-item" href="#">Pending Emails/Actions</a></li>
+                    <li><a class="dropdown-item" href="#">Default POGS Compliances</a></li>
+                    <li><a class="dropdown-item" href="#">Email Addresses</a></li>
+                    <li><a class="dropdown-item" href="#">POGS Reminder Emails</a></li>
+                    <li><a class="dropdown-item" href="#">School Welcome Emails</a></li>
+                    <li><a class="dropdown-item" href="#">Create Reports</a></li>
+                    <li><a class="dropdown-item" href="#">Groups</a></li>
+                    <li><a class="dropdown-item" href="#">Hyperlinks</a></li>
+                    <li><a class="dropdown-item" href="#">Permissions</a></li>
+                    <li><a class="dropdown-item" href="#">School Manuals & Policies</a></li>
+                    <li><a class="dropdown-item" href="#">School Types</a></li>
+                    <li><a class="dropdown-item" href="#">POGS Classification</a></li>
+                    <li><a class="dropdown-item" href="#">User Contacts</a></li>
+                    <li><a class="dropdown-item" href="#">Client Schools & Testimonials</a></li>
+                    <li><a class="dropdown-item" href="#">Existing POGS CCM</a></li>
+                    <li><a class="dropdown-item" href="#">Useful Information - POGS</a></li>
+                    <li><a class="dropdown-item" href="#">Useful Information - Schools</a></li>
+                    <li><a class="dropdown-item" href="#">Information provided to POGS</a></li>
+                    <li><a class="dropdown-item" href="#">Administrator Awaiting Verification</a></li>
+                    <li><a class="dropdown-item" href="#">Administrator Instructions</a></li>
+                    <li><a class="dropdown-item" href="#">Extra OHS Documents</a></li>
+                  <li role="separator" class="divider"></li>
+                  <!-- <li class="dropdown-header">Additional</li> -->
+                  <li><a href="#">Settings</a></li>
+                </ul>
+              </li>
+            <li><a href="./">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" style="width: 100%;">
+
+      <nav id="sidebar" style="padding-top: 50px;">
+        <div class="sidebar-header">
+            <span style="Margin-left: 28px;color:snow;">Compliance Register</span>
+        </div>
+        <ul class="list-unstyled components" style="padding-top:1px;">        
+            <li class="active">
+                <a href="#home">My Home</a>
+            </li>
+            <li>
+                <a href="#">Awaiting Verification</a>
+            </li>
+            <li>
+                <a href="#Invite new POGS">Invite new POGS</a>
+            </li>
+            <li>
+                <a href="#">Account details</a>
+            </li>
+            <li>
+                <a href="#">Add New POGS Request</a>
+            </li>
+            <li>
+                <a href="#">Useful Information</a>
+            </li>
+            <li>
+                <a href="#">Search for a new POGS</a>
+            </li>
+            <li>
+                <a href="#">Administrator Instructions</a>
+            </li>
+            <li>
+                <a href="#">Contact Support</a>
+            </li>
+            <li>
+                <a href="#">Information provided to POGS</a>
+            </li>
+            <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Files</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Handbook</a>
+                        </li>
+                        <li>
+                            <a href="#">SWMS</a>
+                        </li>
+                        <li>
+                            <a href="#">WWC</a>
+                        </li>
+                        <li>
+                            <a href="#">Liability</a>
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+        <p style="font-size: 14px; color: black;text-align:center;">Copyright © Safety Assurance Management Pty Ltd.</p>
+        <p style="font-size: 13px; color:black;text-align:center;">ABN: 99 142 387 728</p>
+    </nav>
+    <div class="jumbotron" style="padding-left: 300px;">
+      <h1>CONTENT</h1></div>
+
+    </div> <!-- /container -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
